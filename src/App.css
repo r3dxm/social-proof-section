@@ -1,38 +1,151 @@
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url("./fonts/LeagueSpartan.ttf");
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.backgroundDesktop {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: space-around;
+  justify-content: space-around;
+  overflow: hidden;
+  pointer-events: none;
+  position: relative;
+  z-index: -1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.backgroundMobile {
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: space-around;
+  justify-content: space-around;
+  overflow: hidden;
+  pointer-events: none;
+  position: relative;
+  z-index: -1;
+}
+
+.backgroundTopDesktop {
+  height: 50%;
+  align-self: flex-start;
+}
+
+.backgroundBottomDesktop {
+  height: 90%;
+  align-self: flex-end;
+}
+
+.socialProof {
+  width: 1200px;
+  height: 100%;
+  position: absolute;
+}
+
+.socialProofTop {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topText {
+  width: 40%;
+  font-family: "LeagueSpartan";
+}
+
+.topText h1 {
+  font-weight: 700;
+  font-size: 60px;
+  color: var(--very-dark-magenta);
+}
+
+.topText p {
+  width: 380px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 150%;
+  color: var(--dark-grayish-magenta);
+  margin-top: -30px;
+}
+
+.topRatings {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1200px) {
+  .backgroundDesktop {
+    height: 120%;
   }
-  to {
-    transform: rotate(360deg);
+  .socialProof {
+    width: 90%;
+  }
+  .testimonials {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .backgroundDesktop {
+    display: none;
+  }
+  .backgroundMobile {
+    display: flex;
+  }
+  .socialProof {
+    width: 100%;
+  }
+  .socialProofTop {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .topText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .topText h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  .topText p {
+    width: 80%;
+  }
+  .topRatings {
+    width: 100%;
+    align-items: center;
   }
 }

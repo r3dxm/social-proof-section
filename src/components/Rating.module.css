@@ -1,0 +1,47 @@
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url("../fonts/LeagueSpartan.ttf");
+}
+
+.container {
+  width: 425px;
+  display: flex;
+  align-items: center;
+  background-color: var(--light-grayish-magenta);
+  border-radius: 10px;
+  margin-top: 15px;
+  padding: 5px;
+}
+
+.starContainer {
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+.starContainer img {
+  margin-right: 10px;
+  height: 15px;
+}
+
+p {
+  font-family: "LeagueSpartan";
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--very-dark-magenta);
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    width: 80%;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+}
