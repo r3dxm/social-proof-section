@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/social-proof-section/static/css/main.94444e87.css",
+    "main.js": "/social-proof-section/static/js/main.f4319a83.js",
+    "static/js/787.a215e828.chunk.js": "/social-proof-section/static/js/787.a215e828.chunk.js",
+    "static/media/LeagueSpartan.ttf": "/social-proof-section/static/media/LeagueSpartan.373d611ec44856608b96.ttf",
+    "index.html": "/social-proof-section/index.html",
+    "static/media/bg-pattern-bottom-desktop.svg": "/social-proof-section/static/media/bg-pattern-bottom-desktop.32aa6571dc718836bdfc0e9aeccb9433.svg",
+    "static/media/bg-pattern-bottom-mobile.svg": "/social-proof-section/static/media/bg-pattern-bottom-mobile.593835ec67fd27ee2a62eff3257f1284.svg",
+    "static/media/bg-pattern-top-desktop.svg": "/social-proof-section/static/media/bg-pattern-top-desktop.9d4ba9c9b19e4c6be1e69daf021a2d81.svg",
+    "static/media/bg-pattern-top-mobile.svg": "/social-proof-section/static/media/bg-pattern-top-mobile.58eed600d32e18ece9dcaeda93b47090.svg",
+    "static/media/icon-star.svg": "/social-proof-section/static/media/icon-star.2d8e7b7cb342bc812e9df51d276eaa78.svg",
+    "main.94444e87.css.map": "/social-proof-section/static/css/main.94444e87.css.map",
+    "main.f4319a83.js.map": "/social-proof-section/static/js/main.f4319a83.js.map",
+    "787.a215e828.chunk.js.map": "/social-proof-section/static/js/787.a215e828.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94444e87.css",
+    "static/js/main.f4319a83.js"
+  ]
+}
